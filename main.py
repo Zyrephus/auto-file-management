@@ -44,10 +44,10 @@ def move_files():
         if 'Screenshot' in file2 and not os.path.exists(path + 'screenshots/' + file2):
             shutil.move(path + file2, path + 'screenshots/' + file2)
 
-# Schedule the job to run every 1 minute
+# schedule the job to run every minute
 schedule.every(1).minutes.do(move_files)
 
-# Run the scheduler in a loop
+# run the scheduler in a loop
 while True:
     schedule.run_pending()
-    time.sleep(1)  # Sleep for 1 second to avoid high CPU usage
+    time.sleep(1)  # sleep for 1 second to avoid high CPU usage
