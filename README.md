@@ -1,6 +1,5 @@
 # auto-file-management
 
-This program is automated to move files in the user's downloaded folder to specific folders depending on the file type.
-It supports .png, .jpeg/jpg, .gif, and .pdf files.
+This program is automated to move screenshots to the trash bin on MacOS.
 
-Last updated: November 10, 2023
+Last updated: March 15, 2024
